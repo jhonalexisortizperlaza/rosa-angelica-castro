@@ -147,6 +147,14 @@ ul {
 
     .landing {
         grid-template-columns: 1fr;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 35% 65%;
+    }
+
+    .title {
+        margin-top: 15px;
+    }
+
+    .frase {
+        margin-top: 2rem;
     }
 }
