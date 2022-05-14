@@ -157,4 +157,10 @@ ul {
     .frase {
         margin-top: 1.5rem;
     }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
 }
