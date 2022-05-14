@@ -1,0 +1,148 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+body {
+    background: var(--Violet);
+    margin: 0;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 1400px;
+    max-width: 80%;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-content: center;
+    justify-items: center;
+}
+
+.landing__img {
+    width: 100%;
+    border: 2px var(--SoftMagenta) solid;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.landing__content {
+    align-self: center;
+}
+
+h1, h2 {
+    color: #eee;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    margin: 50px 0 10px 0 ;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+.hoja-vida {
+    text-decoration: none;
+    border: 1px #ccc solid;
+    color: #ccc;
+    padding: 0.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.hoja-vida:hover {
+    border: 1px var(--SoftMagenta) solid;
+    color: var(--SoftMagenta);
+}
+
+.frase {
+    text-align: end;
+    margin-top: 3rem;
+    color: #bbb;
+}
+
+@media screen and (max-width: 1150px) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    .landing__img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .landing__img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .wrapper {
+        max-width: 95%;
+    }
+
+    .landing__img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .landing {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
